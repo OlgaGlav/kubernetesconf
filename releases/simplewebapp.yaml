@@ -16,8 +16,8 @@ spec:
     path: charts/simplewebapp
   values:
     image:
-      repository: gcr.io/aggregator-379612/github.com/olgaglav/modsen_intership
-      tag: "configserver-8769acb6960fafab8f03d5106b54f5a60fada512"
+      repository: gcr.io/aggregator-379612/github.com/olgaglav/modsen_intership_configserver
+      tag: "production-8769acb6960fafab8f03d5106b54f5a60fada512"
     replicaCount: 1
     service:
       port: 80
