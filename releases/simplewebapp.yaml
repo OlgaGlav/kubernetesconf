@@ -10,13 +10,14 @@ metadata:
 spec:
   releaseName: simplewebapp
   chart:
-    git: ssh://git@github.com/pcherednichenko/kubernetesconf
+#     git: ssh://git@github.com/pcherednichenko/kubernetesconf
+    git: git@github.com/olgaglav/kubernetesconf
     ref: master
     path: charts/simplewebapp
   values:
     image:
-      repository: gcr.io/test-project-266218/github.com/pcherednichenko/simplewebapp
-      tag: "production-70dc5d2"
+      repository: gcr.io/aggregator-379612/github.com/olgaglav/modsen_intership
+      tag: "configserver-8769acb6960fafab8f03d5106b54f5a60fada512"
     replicaCount: 1
     service:
       port: 80
