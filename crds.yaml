@@ -19,13 +19,12 @@ spec:
   versions:
   - additionalPrinterColumns:
     - jsonPath: .status.releaseName
-      name: Release
-      type: string
+        name: Release
+        type: string
     - jsonPath: .status.phase
-      name: Phase
-      type: string
-    - description: ReleaseStatus is the status of the Helm release, as given by Helm.
-      jsonPath: .status.releaseStatus
+        name: Phase
+        type: string
+    - jsonPath: .status.releaseStatus
       name: ReleaseStatus
       type: string
     - jsonPath: .status.conditions[?(@.type=="Released")].message
