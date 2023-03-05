@@ -22,8 +22,7 @@ spec:
       jsonPath: .status.releaseName
       name: Release
       type: string
-    - description: Phase is the current release phase being performed for the HelmRelease.
-      jsonPath: .status.phase
+    - jsonPath: .status.phase
       name: Phase
       type: string
     - description: ReleaseStatus is the status of the Helm release, as given by Helm.
