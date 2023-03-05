@@ -18,8 +18,7 @@ spec:
   scope: Namespaced
   versions:
   - additionalPrinterColumns:
-    - description: Release is the name of the Helm release, as given by Helm.
-      jsonPath: .status.releaseName
+    - jsonPath: .status.releaseName
       name: Release
       type: string
     - jsonPath: .status.phase
